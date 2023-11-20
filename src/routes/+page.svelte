@@ -1,6 +1,5 @@
 <script>
-	import Three from './Three.svelte';
-	
+	import Three from "./Three.svelte";
 </script>
 
 <svelte:head>
@@ -9,16 +8,13 @@
 </svelte:head>
 
 <section>
-	<div class="three_container">
-		<Three />
-	</div>
+	<Three />
 </section>
 
 <style>
-	.three_container {
+	section {
+		display: flex;
 		justify-content: center;
 		justify-self: center;
-		width: 100vw;
-		height: 10vh;
 	}
 </style>
