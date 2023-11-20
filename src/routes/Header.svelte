@@ -3,27 +3,34 @@
 </script>
 
 <header>
-	<a class="header-left">SteveThePug</a>
+	<a href="./" class="header-left">SteveThePug</a>
 	<nav class="header-right">
-		<a href="svelte-welcome.png" class="header-link">CV</a>
-		<a href="svelte-welcome.png" class="header-link">CONTACT</a>
+		<a href="/cv" class="header-link">CV</a>
+		<img src="images/teeth.png" alt="Your Image" />
+		<img src="images/cacc.png" alt="Your Image" />
 	</nav>
-
-
 </header>
 
 <style>
 	.header-left {
 		float: left;
+		padding: 10px;
 	}
-
+	
 	.header-right {
 		float: right;
+		padding: 10px;
 	}
-
+	
 	.header-link {
 		margin-left: 10px;
-		color: red;
-		font-family: Verdana, sans-serif;
+		font-family: 'Inter', sans-serif;
+		font-variation-settings: 'wght' 400;
+		transition: font-variation-settings 0.3s ease;
+		font-size: 18px;
+	}
+
+	img {
+		height: 5vh;
 	}
 </style>
