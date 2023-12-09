@@ -1,50 +1,50 @@
 <script>
-	import Header from './Header.svelte';
-	import './styles.css';
+	import Header from "./Header.svelte";
+	import Footer from "./Footer.svelte";
+	import "./styles.css";
+	export const prerender = true;
 </script>
 
-<div class="app">
-	<Header />
+<div class="background"></div>
+<Header />
+<div class="body">
 	<main>
 		<slot />
 	</main>
-	<footer>
-	</footer>
+	<!-- <Three /> -->
 </div>
 
+<Footer />
+
 <style>
-	.app {
+	.body {
 		display: flex;
 		flex-direction: column;
-		min-height: 100vh;
+		align-items: center;
+		justify-content: center;
+		width: 21cm; /* A4 width */
+		margin: auto;
+		z-index: -10;
+		overflow: hidden;
 	}
-
+	.background {
+		margin: 0;
+		top: 0;
+		left: 0;
+		position: fixed;
+		background: url(images/blueprint.jpeg) repeat;
+		background-repeat: repeat;
+		background-size: 50%;
+		z-index: -10;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
 	main {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
 		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
 	}
 </style>
