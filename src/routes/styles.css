@@ -25,7 +25,7 @@
 	--color-bg-0: rgb(10, 10, 90);
 	--color-bg-1: rgb(10, 30, 90);
 	--color-bg-2: rgb(10, 10, 90);
-	--color-theme-1: #f210ff;
+	--color-theme-1: #313;
 	--color-theme-2: #880906;
 	--color-text: rgba(00, 00, 10, 1);
 	--column-width: 42rem;
@@ -38,6 +38,13 @@
 
 body {
 	overflow-x: hidden;
+}
+
+h1,
+h2 {
+	font-family: fjalla;
+	color: rgb(20, 20, 53);
+	text-align: left;
 }
 
 a {

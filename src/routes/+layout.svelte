@@ -6,7 +6,7 @@
 </script>
 
 <div class="background"></div>
-<Header />
+<!-- <Header /> -->
 <div class="body">
 	<main>
 		<slot />
@@ -14,7 +14,7 @@
 	<!-- <Three /> -->
 </div>
 
-<Footer />
+<!-- <Footer /> -->
 
 <style>
 	.body {
@@ -25,19 +25,19 @@
 		width: 21cm; /* A4 width */
 		margin: auto;
 		z-index: -10;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 	.background {
 		margin: 0;
 		top: 0;
 		left: 0;
 		position: fixed;
-		background: url(images/blueprint.jpeg) repeat;
+		background: url("/images/blueprint.jpeg") repeat;
 		background-repeat: repeat;
 		background-size: 50%;
 		z-index: -10;
-		width: 100vw;
-		height: 100vh;
+		width: 100%;
+		height: 100%;
 		overflow: hidden;
 	}
 	main {
@@ -45,6 +45,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		max-width: 64rem;
+		background-size: cover;
+		background-color: aliceblue;
 	}
 </style>
